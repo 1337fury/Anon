@@ -871,3 +871,60 @@
       background: var(--eerie-black);
       color: var(--white);
     }
+	 /* 
+      ^04 02^ category cards
+    */
+
+    .category-card-box { margin-bottom: 30px; }
+
+    .category-card-container {
+      gap: 15px;
+    }
+
+    .category-card {
+      padding: 15px;
+      border-radius: var(--border-radius-sm);
+      background-color: var(--white);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      border: 1px solid var(--cultured);
+      min-width: 100%;
+    }
+
+    .category-card-image {
+      width: 50px;
+      height: 50px;
+      background-color: var(--cultured);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: var(--border-radius-sm);
+      border: 1px solid hsl(0, 0%, 80%);
+    }
+
+    .category-card-content { flex: 1; }
+
+    .card-content-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-content-header h4 {
+      color: var(--onyx);
+      font-size: var(--fs-7);
+      text-transform: uppercase;
+    }
+
+    .card-content-header .counter {
+      font-size: var(--fs-10);
+      color: var(--sonic-silver);
+    }
+
+    .card-content-link {
+      color: var(--salmon-pink);
+      font-size: var(--fs-9);
+      font-weight: var(--weight-500);
+      margin-top: 10px;
+    }
