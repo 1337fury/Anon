@@ -1809,3 +1809,381 @@
 		color: var(--sonic-silver);
 	  }
   
+	  /* Responsive */
+	  @media (min-width : 480px) {
+
+		/* 
+		  #root
+		*/
+  
+		:root {
+		  --fs-1: 1.875rem;
+  
+		}
+  
+		/* 
+		  #responsive Top Header
+		*/
+  
+		.top-header { display: block; }
+  
+		.top-header .container {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		}
+  
+		.top-header-social, .top-header-lang { display: none; }
+  
+		/* 
+		  #responsive banner
+		*/
+  
+		.slider-item {
+		  aspect-ratio: 5 / 3;
+		}
+  
+		.slider-content {
+		  top: 50%;
+		  right: auto;
+		  bottom: auto;
+		  transform: translateY(-50%);
+		  max-width: 320px;
+		}
+  
+		.slider-content .subtitle { font-size: var(--fs-6); }
+  
+		.slider-content .main-title {  
+		  font-size: var(--fs-1);
+		  padding-right: 0;
+		}
+  
+		.slider-content .starting-price { display: block; }
+  
+		/* 
+		  #deal of day products
+		*/
+  
+		.deal-of-day-products-box {
+		  padding: 30px;
+		}
+  
+  
+		
+	  }
+  
+	  @media (min-width : 570px) {
+  
+		/* 
+		  #responsive Top Header
+		*/
+  
+		.top-header-lang { display: block; }
+  
+		/* 
+		  #responsive Main Header
+		*/
+		
+		.main-header .container {
+		  flex-direction: row;
+		  justify-content: space-between;
+		}
+  
+		.main-header-search {
+		  min-width: 300px;
+		}
+  
+  
+		/* 
+		  #responsive banner
+		*/
+  
+		.slider-item { aspect-ratio: 4 / 2; }
+  
+		.slider-content { background-color: transparent; }
+  
+		/* 
+		  #responsive category card
+		*/
+  
+		.category-card-container { margin: 30px 0;}
+  
+		.category-card { min-width: calc(100% / 2 - 8px);}
+  
+		 /* 
+		  #responsive Our products
+		*/
+  
+		.special-product > div { 
+		  width: calc(100% / 2 - 10px); 
+		  flex-grow: 1;
+		}
+  
+		 /* 
+		  #Responsive deal of day product
+	  */
+  
+	  .countdown-box { gap: 20px; }
+  
+  
+	  /* ******* */
+  
+	  .blog-item {
+		min-width: calc(100% / 2 - 7px);
+	  }
+  
+  
+	  }
+  
+	  @media (min-width: 768px) {
+		/* 
+		  #root
+		*/
+		:root {
+		  --fs-1: 2.423rem;
+		  --fs-2: 1.875rem;
+		}
+		/* 
+		  #responsive Modal
+		*/
+		.modal-content {
+		  display: flex;
+		  max-width: 750px;
+		  align-items: center;
+		  background-color: var(--white);
+		}
+		.newsletter-image { 
+		  display: block; 
+		}
+		/* 
+		  #responsive Main Header
+		*/
+		.main-header-search {
+		  flex-grow: 1;
+		  max-width: 500px;
+		}
+  
+		/* 
+		  #responsive banner
+		*/
+		.slider-content { max-width: 350px; } 
+  
+		.slider-content .subtitle { font-size: var(--fs-2); }
+  
+		.slider-content .main-title { font-size: var(--fs-1); }
+  
+		.slider-content .starting-price { font-size: var(--fs-3);}
+  
+		.slider-content .starting-price b { font-size: var(--fs-2); }
+  
+		.slider-content .shop-btn {
+		  font-size: var(--fs-9);
+		  padding: 8px 20px;
+		  margin-top: 15px;
+		}
+  
+		/*
+		  #Responsive deal of day product
+		*/
+  
+		.deal-of-day-products-box {
+		  display: flex;
+		  align-items: center;
+		}
+  
+		.product-box-image { max-width: 390px; }
+  
+		.product-box-content { flex: 1; align-self: flex-start;}
+  
+		/*  */
+  
+		.collection-content {
+		  border-radius: 0;
+		  -webkit-border-radius: 0;
+		  -moz-border-radius: 0;
+		  -ms-border-radius: 0;
+		  -o-border-radius: 0;
+		  padding: 30px 25px;
+		}
+  
+		.discount {
+		  font-size: var(--fs-8);
+		  padding: 6px 11px;
+		}
+  
+		.collection-title { font-size: var(--fs-2); }
+	
+		.collection-text { font-size: var(--fs-3); }
+	
+		.collection-btn { font-size: var(--fs-5); }
+  
+  
+  
+		.top-footer-box-title {
+		  font-size: var(--fs-4);
+		}
+  
+		.footer-category-box-title {
+		  font-size: var(--fs-7);
+		}
+  
+		.footer-category-box-link {
+		  font-size: var(--fs-6);
+		}
+  
+		.bottom-footer-box .copyright {
+		  font-size: var(--fs-5);
+		}
+		
+	  }
+  
+	  @media (min-width: 1024px) {
+		/* #root */
+  
+		:root { --fs-1: 2.723rem; }
+  
+		/* 
+		  #responsive Top Header
+		*/
+  
+		.top-header-social { display: flex; }
+  
+		/* 
+		  #responsive Main Header
+		*/
+  
+		.main-header-search { max-width: 600px; }
+		.main-header-nav { display: flex; }
+  
+		/* 
+		  #Responsive Mobile Navigation
+		*/
+  
+		.mobile-nav { display: none; }
+  
+		 /* 
+		  #Responsive Desktop Navigation
+		*/
+  
+		.desktop-navigation-box { display: block; }
+  
+  
+		/* 
+		  #responsive banner
+		*/
+		
+		.main-banner { margin: 0; }
+  
+		.slider-item { aspect-ratio: 3 / 1; }
+  
+		.slider-content { left: 75px; max-width: 400px; }
+  
+		 /* 
+		  #responsive category card
+		*/
+  
+		.category-card { min-width: calc(100% / 3 - 20px);}
+  
+		/* 
+		  #responsive Our products
+		*/
+  
+		.our-products .container {
+		  display: flex;
+		  align-items: flex-start;
+		  gap: 30px;
+		}
+  
+		.products-box { width: calc(75% - 15px); }
+  
+		.special-product > div { width: calc(100% / 3 - 20px); }
+  
+		/* 
+		  #responsive Aside
+		*/
+  
+		.desktop-aside {
+		  position: sticky;
+		  left: 0;
+		  top: 30px;
+		  padding: 0;
+		  width: initial;
+		  max-width: 320px;
+		  height: initial;
+		  z-index: initial;
+		  overflow: initial;
+		  visibility: visible;
+		  transition: initial;
+		  transform: translateX(0);
+		}
+		
+		.desktop-aside-close-btn { display:  none; }
+  
+		.aside-category {
+		  padding: 15px;
+		  border: 1px solid var(--cultured);
+		  border-radius: var(--border-radius-sm);
+		  background: var(--white);
+		}
+  
+  
+		.card-box {
+		  flex-direction: column;
+		  text-align: center;
+		}
+  
+  
+		.testimonials .container {
+		  grid-template-columns: 1fr 1fr;
+		}
+  
+  
+		/* --------- */
+  
+		.blog-item {
+		  min-width: calc(100% / 3 - 10px);
+		}
+  
+  
+		/* ******** */
+  
+		footer { padding-bottom: 30px; }
+  
+		.social-media { display: none; }
+  
+  
+	  }
+  
+	  @media (min-width: 1200px) {
+  
+		/* 
+		  #responsive category card
+		*/
+  
+		.category-card { min-width: calc(100% / 4 - 11.1px);}
+  
+		.testimonials .container {
+		  grid-template-columns: calc(25% - 20px) 50% calc(25% - 20px);
+		}
+  
+		.card-box {
+		  flex-direction: row;
+		  text-align: left;
+		}
+  
+		.card-box-icon ion-icon {
+		  font-size: 35px;
+		}
+  
+		.service-card {
+		  gap: 15px;
+		}
+  
+		.user-quote-text { padding: 0 10px; }
+  
+		.blog-item {
+		  min-width: calc(100% / 4 - 15px);
+		}
+  
+	  }
+  
