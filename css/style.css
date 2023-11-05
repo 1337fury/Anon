@@ -534,3 +534,54 @@
       color: var(--eerie-black);
       cursor: pointer;
     }
+	/* 
+      #Global news class
+     */
+
+	 li.news { position: relative; }
+
+	 li.news::after {
+	   position: absolute;
+	   top: -8px;
+	   right: -8px;
+	   width: 16px;
+	   height: 16px;
+	   background-color: var(--salmon-pink);
+	   border-radius: 50%;
+	   content: "0";
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   color: var(--white);
+	   font-size: var(--fs-10);
+	 }
+ 
+	 /* 
+	   ^03 02^ Mobile Navigation
+	 */
+ 
+	 .mobile-nav {
+	   position: fixed;
+	   bottom: 0;
+	   left: 50%;
+	   transform: translateX(-50%);
+	   width: 100%;
+	   max-width: 500px;
+	   background-color: var(--white);
+	   box-shadow: 0 -8px 10px rgba(0, 0, 0, .1);
+	   padding: 20px 20px;
+	   z-index: 5;
+	 }
+ 
+	 .mobile-nav-list {
+	   display: flex;
+	   justify-content: space-around;
+	   align-items: center;
+	 }
+ 
+	 .mobile-nav-list li ion-icon {
+	   font-size: 26px;
+	   color: var(--eerie-black);
+	   cursor: pointer;
+	 }
+ 
