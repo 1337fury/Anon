@@ -476,3 +476,61 @@
 	  .top-header-lang select option { padding: 10px; }
   
 	  .top-header-lang select:hover { color: var(--eerie-black); }
+	  /* 
+      ^03 01^ Main Header
+    */
+
+    .main-header { border-bottom: 1px solid var(--cultured); padding: 20px 0;}
+
+    .main-header .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-header-logo a {
+      color: var(--eerie-black);
+      margin-bottom: 10px;
+    }
+
+    .main-header-search form input {
+      padding: 5px 10px;
+      border: 1px solid var(--cultured);
+      border-radius: var(--border-radius-md);
+      padding-right: 50px;
+      color: var(--onyx);
+    }
+
+    .main-header-search form { position: relative; }
+
+    .main-header-search form::after {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      font-family: "Font Awesome 5 Free";
+      content: "\f002";
+      font-weight: 900;
+      color: var(--onyx);
+      font-size: var(--fs-7);
+      cursor: pointer;
+    }
+
+    .main-header-search form:hover::after { color: var(--salmon-pink); }
+
+    .main-header-search form input::placeholder { font-size: var(--fs-7); }
+
+    .main-header-search form input:focus { outline: 2px solid var(--eerie-black); }
+
+    .main-header-nav {
+      display: none;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-header-nav ion-icon {
+      font-size: 35px;
+      color: var(--eerie-black);
+      cursor: pointer;
+    }
