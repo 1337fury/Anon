@@ -1442,3 +1442,165 @@
     .new-product-box-content-pricing .new-price { color: var(--eerie-black);}
 
     .new-product-box-content-pricing .old-price { font-size: var(--fs-6);}
+
+	.testimonials { margin: 30px 0;}
+
+    .testimonials .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .testimonial-card {
+      border: 1px solid var(--cultured);
+      border-radius: var(--border-radius-sm);
+      -webkit-border-radius: var(--border-radius-sm);
+      -moz-border-radius: var(--border-radius-sm);
+      -ms-border-radius: var(--border-radius-sm);
+      -o-border-radius: var(--border-radius-sm);
+      padding: 30px;
+      background: var(--white);
+      text-align: center;
+    }
+
+    .user-img {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      margin: 0 auto 20px;
+    }
+
+    .user-name {
+      color: var(--sonic-silver);
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .user-job {
+      font-size: var(--fs-7);
+      color: var(--onyx);
+      text-transform: capitalize;
+      margin-bottom: 15px;
+    }
+
+    .user-qoute-img { margin: 0 auto 10px; }
+
+    .user-quote-text {
+      font-size: var(--fs-7);
+      color: var(--sonic-silver);
+      line-height: 1.3;
+    }
+
+    .collection-box {
+      position: relative;
+      border-radius: var(--border-radius-sm);
+      -webkit-border-radius: var(--border-radius-sm);
+      -moz-border-radius: var(--border-radius-sm);
+      -ms-border-radius: var(--border-radius-sm);
+      -o-border-radius: var(--border-radius-sm);
+      overflow: hidden;
+      min-height: 370px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .collection-img-banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .collection-content {
+      position: relative;
+      background: #ffffffb3;
+      padding: 15px 20px;
+      border-radius: var(--border-radius-md);
+      -webkit-border-radius: var(--border-radius-md);
+      -moz-border-radius: var(--border-radius-md);
+      -ms-border-radius: var(--border-radius-md);
+      -o-border-radius: var(--border-radius-md);
+    }
+
+    .discount {
+      background-color: var(--eerie-black);
+      color: var(--white);
+      font-size: var(--fs-11);
+      padding: 2px 5px;
+      text-transform: uppercase;
+      font-weight: var(--weight-600);
+      border-radius: var(--border-radius-sm);
+      -webkit-border-radius: var(--border-radius-sm);
+      -moz-border-radius: var(--border-radius-sm);
+      -ms-border-radius: var(--border-radius-sm);
+      -o-border-radius: var(--border-radius-sm);
+      margin-bottom: 8px;
+    }
+    
+    .collection-title {
+      text-transform: capitalize;
+      color: var(--onyx);
+      margin-bottom: 8px;
+    }
+
+    .collection-text {
+      color: var(--sonic-silver);
+      font-size: var(--fs-6);
+      text-transform: capitalize;
+      margin-bottom: 8px;
+    }
+
+    .collection-btn {
+      color: var(--sonic-silver);
+      font-size: var(--fs-8);
+      font-weight: var(--weight-700);
+      text-transform: uppercase;
+    }
+
+    .service-card {
+      border: 1px solid var(--cultured);
+      border-radius: var(--border-radius-sm);
+      -webkit-border-radius: var(--border-radius-sm);
+      -moz-border-radius: var(--border-radius-sm);
+      -ms-border-radius: var(--border-radius-sm);
+      -o-border-radius: var(--border-radius-sm);
+      background-color: var(--white);
+      margin-bottom: 10px;
+      padding: 30px 15px;
+      display: flex;
+      gap: 30px 15px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card-box {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      min-width: 195px;
+    }
+
+    .card-box-icon ion-icon {
+      font-size: 30px;
+      --ionicon-stroke-width: 25px;
+      color: var(--salmon-pink);
+    }
+
+    .card-box-content-title {
+      font-size: var(--fs-7);
+      color: var(--sonic-silver);
+      font-weight: var(--weight-600);
+    }
+
+    .card-box-content-text {
+      font-size: var(--fs-8);
+      color: var(--sonic-silver);
+    }
