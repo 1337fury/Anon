@@ -223,3 +223,74 @@
 	opacity: 1;
 	pointer-events: all;
 	}
+/*
+        ^01^ Modal
+    */
+
+	.modal {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: hsla(0, 0%, 0%, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		z-index: 10;
+		animation: popup 1s ease-in-out 5s forwards;
+	
+	  }
+	
+	  .overlay-modal {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: hsla(0, 0%, 0%, .5);
+		transition: .5 ease;
+	  }
+	
+	  @keyframes popup {
+		0% {
+		  opacity: 0;
+		  visibility: hidden;
+		  pointer-events: none;
+		}
+	
+		100% {
+		  opacity: 1;
+		  visibility: visible;
+		  pointer-events: all;
+		}
+	  }
+	
+	  .modal.close { display: none; }
+	
+	  .modal-content {
+		position: relative;
+		max-width: 350px;
+		margin: 20px;
+		border-radius: var(--border-radius-md);
+		overflow: hidden;
+	  }
+	
+	  .modal-close-btn {
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		padding: 3px;
+		background-color: var(--salmon-pink);
+		color: var(--white);
+		border-radius: var(--border-radius-sm);
+		cursor: pointer;
+	  }
+	
+	  .modal-close-btn:hover { opacity: 0.9; }
+	
+	  .modal-close-btn ion-icon { --ionicon-stroke-width: 70px; }
+	  
