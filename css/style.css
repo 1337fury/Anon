@@ -1,0 +1,200 @@
+/*
+/////////////////////////// [style.css] ////////////////////////////
+*/
+
+/*
+/////////////////////////// [custom property] ///////////////////////
+*/
+
+:root {
+  
+    /*
+        ^00^ colors
+    */
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --eerie-black: hsl(0, 0%, 13%);
+    --salmon-pink: hsl(353, 100%, 78%);
+    --sandy-brown: hsl(29, 90%, 65%);
+    --bittersweet: hsl(0, 100%, 70%);
+    --ocean-green: hsl(152, 51%, 52%);
+    --davys-gray: hsl(0, 0%, 33%);
+    --cultured: hsl(0, 0%, 93%);
+    --white: hsl(0, 100%, 100%);
+    --onyx: hsl(0, 0%, 27%);
+  
+    /*
+        ^01^ typography
+    */
+  
+    --fs-1: 1.563rem;
+    --fs-2: 1.375rem;
+    --fs-3: 1.25rem;
+    --fs-4: 1.125rem;
+    --fs-5: 1rem;
+    --fs-6: 0.938rem;
+    --fs-7: 0.875rem;
+    --fs-8: 0.813rem;
+    --fs-9: 0.75rem;
+    --fs-10: 0.688rem;
+    --fs-11: 0.625rem;
+  
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+  
+    /*
+        ^02^ border raduis
+    */
+  
+    --border-radius-md: 10px;
+    --border-radius-sm: 5px;
+  
+    /*
+        ^03^ transition
+    */
+  
+    --transition-timing: 0.2s ease;
+
+    /*
+      ^04^ Margin
+    */
+
+    --margin-md : 16px;
+    --margin-sm : 6px;  
+  }
+   
+/*
+/////////////////////////// [REST] ///////////////////////
+*/
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a { text-decoration: none; }
+  
+  li { list-style: none; }
+  
+  button {
+    background: none;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  img, ion-icon, button, a { display: block; }
+  
+  span { display: inline-block; }
+  
+  html {
+    font-family: "Poppins", sans-serif;
+    overscroll-behavior: contain;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    font: inherit;
+    outline: none;
+  }
+  
+  input::placeholder { font: inherit; }
+  
+  body { background: var(--white);}
+  
+   /*
+        ^00^ scrollbar style
+    */
+  
+  body::-webkit-scrollbar { width: 15px;}
+  
+  body::-webkit-scrollbar-track {
+    background: var(--white);
+    border-left: 1px solid var(--cultured);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+    border: 3px solid var(--white);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
+
+  
+/*
+/////////////////////////// [REUSED STYLE] ///////////////////////
+*/
+  
+  .container { padding: 0 15px; }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 750px;
+      margin: auto;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 980px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+
+  .has-scrollbar { padding-bottom: 5px; }
+  
+  .has-scrollbar::-webkit-scrollbar {
+    width: 12px; /* for vertical scroll */
+    height: 12px; /* for horizontal scroll */
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 3px solid var(--white);
+    border-radius: 20px;
+  }
+  
+  .has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 90%); }
+  
+  .has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
+
+  /* 
+    [SLIDER CONTAINER]
+  */
+
+  .slider-container {
+    display: flex;
+    gap: 8px;
+    max-width: 100%;
+    overflow: auto hidden;
+    scroll-snap-type: inline mandatory;
+    overscroll-behavior-inline: contain;
+    align-items: center;
+  }
+
+  .scroll-snap-align-start {
+    scroll-snap-align: start;
+  }
+  
+  .title {
+    color: var(--eerie-black);
+    font-size: var(--fs-5);
+    font-weight: var(--weight-600);
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--cultured);
+    margin-bottom: 30px;
+  }
