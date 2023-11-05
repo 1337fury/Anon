@@ -342,7 +342,7 @@
   }
 
   .newsletter-btn:hover { background-color: var(--salmon-pink); }
-  
+
 	/*
         ^02^  Notification Toast
     */
@@ -426,3 +426,53 @@
 		font-size: var(--fs-10);
 		color: var(--davys-gray);
 	  }
+	/*
+        ^03^ Header
+    */
+
+    /* 
+      ^03 00^ Top Header
+    */
+
+    .top-header {
+		display: none;
+		border-bottom: 1px solid var(--cultured); 
+		padding: 10px 0;
+	  }
+  
+	  .top-header-social { gap: 5px; }
+  
+	  .top-header-social a { 
+		color: var(--davys-gray);
+		padding: 5px;
+		background-color: var(--cultured);
+		border-radius: var(--border-radius-sm);
+		opacity: .8;
+	  }
+  
+	  .top-header-social a:hover {
+		background-color: var(--salmon-pink);
+		color: var(--white);
+	  }
+  
+	  .top-header-social a ion-icon { font-size: 17px; }
+  
+	  .top-header-pup {
+		font-size: var(--fs-9);
+		color: var(--sonic-silver);
+	  }
+  
+	  .top-header-lang select {
+		padding: 8px;
+		background: var(--cultured);
+		border: none;
+		color: var(--davys-gray);
+		text-transform: uppercase;
+		outline: none;
+		font-size: var(--fs-9);
+		cursor: pointer;
+	  }
+  
+	  .top-header-lang select option { padding: 10px; }
+  
+	  .top-header-lang select:hover { color: var(--eerie-black); }
