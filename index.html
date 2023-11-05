@@ -33,5 +33,38 @@
         [Overlay]
     -->
     <div class="overlay" data-overlay></div>
+	<!-- 
+        [Modal]
+     -->
+	 <div class="modal close" data-model>
+        <!-- #modal overlay -->
+        <div class="overlay-modal" data-modal-overlay></div>
+        <!-- 
+            [Newsletter]
+         -->
+        <div class="modal-content">
+            <div class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <!-- #Newletter image -->
+            <div class="newsletter-image">
+                <img src="./images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+            </div>
+            <!-- #Newletter content -->
+            <div class="newslatter-content">
+                <form action="#">
+                    <div class="newsletter-header">
+                        <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+                        <p class="newsletter-des">Subscribe the <b>Anon</b> to get latest products and discount update.</p>
+                    </div>
+    
+                    <input class="newsletter-email" type="email" name="user_email" id="user_email"  placeholder="Email Address" required>
+    
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
