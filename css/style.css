@@ -293,4 +293,52 @@
 	  .modal-close-btn:hover { opacity: 0.9; }
 	
 	  .modal-close-btn ion-icon { --ionicon-stroke-width: 70px; }
-	  
+
+	/*
+        ^01 00^ Newsletter
+    */
+  .newsletter-image { display: none; }
+
+  .newslatter-content {
+    background-color: var(--white);
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .newsletter-header {
+    margin-bottom: var(--margin-md);
+  }
+
+  .newsletter-title {
+    color: var(--onyx);
+    font-size: var(--fs-2);
+    font-weight: var(--weight-600);
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-des {
+    color: var(--sonic-silver);
+    font-size: var(--fs-7);
+    line-height: 1.6;
+  }
+
+  .newsletter-email {
+    padding: 5px 10px;
+    border: 1px solid var(--cultured);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .newsletter-email:focus { outline: 2px solid var(--eerie-black); } 
+
+  .newsletter-email::placeholder { font-size: var(--fs-7); }
+
+  .newsletter-btn {
+    background-color: var(--eerie-black);
+    color: var(--white);
+    padding: 10px;
+    margin: var(--margin-md) auto 0;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-timing);
+  }
+
+  .newsletter-btn:hover { background-color: var(--salmon-pink); }
